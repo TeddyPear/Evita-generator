@@ -34,5 +34,5 @@ kandidaten.push(new persoon("Julie","Nee",23,"Nee","Maakt niet uit","Vrouw","Man
 
  
   document.getElementById("output").innerHTML = 
-  'kandidaten.push(new persoon("' + zelf.naam + ' '+ document.getElementById("lastName1").value + '","'+ zelf.kinderen +'",'+ zelf.leeftijd +' ,"'+ zelf.zelforg + '","'+zelf.anderorg + '","'+ zelf.geslacht+'","'+ zelf.voorkeur + '","'+ zelf.zelfsport + '","'+ zelf.andersport + '));';
+  'kandidaten.push(new persoon("' + zelf.naam + ' '+ document.getElementById("lastName1").value + '","'+ zelf.kinderen +'",'+ zelf.leeftijd +' ,"'+ zelf.zelforg + '","'+zelf.anderorg + '","'+ zelf.geslacht+'","'+ zelf.voorkeur + '","'+ zelf.zelfsport + '","'+ zelf.andersport + '"));';
 }
