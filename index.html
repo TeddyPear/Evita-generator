@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">  
+      <title>Evita</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+   <script src="scripting.js"></script>
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li><a href="#">Vind een partner</a></li>
+               <li><a href="#">Over Evita</a></li>
+               <li><a href="#">Contact</a></li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mijn account
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">Login</a></li>
+                     <li><a href="#">Maak een account aan</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="jumbotron">
+         <div class="row text-center">
+            <img id="logo" src="https://vignette.wikia.nocookie.net/logopedia/images/a/a6/Evita-1996-movie-logo.png/revision/latest?cb=20151129223055">
+            <h2><b>Vind de ware</b></h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-10 ding" style="background-color: #ffb5bb">
+            <h3>Evita is niet zo maar een website, het is de manier waarop je je grote liefde gaat ontmoeten. 
+            Dankzij een geadvanceerd algoritme worden partners gekoppeld (met een succesratio van wel 98 procent!).</h4>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div id="formcontainer">
+            <form>
+              <div class="form-inline namen" >
+                  <label for="exampleInputEmail1">Voornaam:</label>
+                  <input type="text" class="form-control" id="firstName1" >
+                  <label for="exampleInputPassword1">Achternaam:</label>
+                  <input type="text" class="form-control" id="lastName1" >
+               </div>
+               <div id="questions">
+               <br>
+               <label for="sel1" id="firstquest" class="question">Bent u een:</label>
+
+               <br>
+               <label for="sel1" id="firstquest" class="question">Bent u op zoek naar een:</label>
+
+               <br>  
+               <label for="sel1" id="firstquest" class="question">Zou u kinderen willen?</label>
+
+               <br>
+               <label for="sel1" class="question">Beschouwt u zichelf als een georganiseerd persoon?</label>
+
+               <br>
+               <label for="sel1" class="question">Bent u op zoek naar een georganiseerde partner?</label>
+              
+              <br>
+               <label for="sel1" class="question">Bent u sportief?</label>
+
+               <br>
+               <label for="sel1" class="question">Op wat voor soort vakanties zou je eerder gaan?</label>
+               
+              <br>
+               <label for="sel1" class="question">Zoekt u een sportieve partner?</label>
+               
+              <br>
+               <label for="sel1" class="question">Wat is uw leeftijd?</label>
+                 
+              </div>
+              <div id="answers">
+               <select class="form-control answer" id="geslacht">
+                  <option>Man</option>
+                  <option>Vrouw</option>
+               </select>
+                <select class="form-control answer" id="voorkeur">
+                  <option>Man</option>
+                  <option>Vrouw</option>
+                  <option>Maakt niet uit</option>
+               </select>
+               <select class="form-control answer" id="Kinderen1">
+                  <option>Ja</option>
+                  <option>Nee</option>
+               </select>
+               <select class="form-control answer" id="zelfOrg1">
+                  <option>Ja</option>
+                  <option>Nee</option>
+               </select>
+                <select class="form-control answer" id="anderOrg1">
+                  <option>Liever wel</option>
+                  <option>Maakt niet uit</option>
+               </select>
+               <select class="form-control answer" id="zelfsport">
+                  <option>Ja</option>
+                  <option>Nee</option>
+               </select>
+               <select class="form-control answer" id="vakantie" >
+                  <option>Strandvakantie</option>
+                  <option>Cruise</option>
+                  <option>Trektochten</option>
+               </select>
+               <select class="form-control answer" id="andersport">
+                  <option>Liever wel</option>
+                  <option>Maakt niet uit</option>
+               </select>
+               <input type="number" id="leeftijd" class="form-control answer">
+              </div>
+            </form>
+            <br>
+           </div>
+            <button type="button" class="btn btn-default" onclick="myFunction();">Klaar</button>
+            <h1 id ="output"></h1>
+         
+         </div> 
+         <div class="col-sm-2 ding" style="background-color: #ffb5bb; padding:5px;">
+            <a data-height="2000px" class="twitter-timeline" href="https://twitter.com/selfhelp_tweets?ref_src=twsrc%5Etfw">Tweets by POTUS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+         </div>
+      </div>
+   </body>
+</html>
