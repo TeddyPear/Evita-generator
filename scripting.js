@@ -31,46 +31,8 @@ kandidaten.push(new persoon("Jan","Nee", 19,"Ja","Liever wel","Man","Man","Stran
 kandidaten.push(new persoon("Eva","Ja",22,"Nee","Liever wel","Vrouw","Maakt niet uit","Trektochten","Ja","Ja"));
 kandidaten.push(new persoon("Julie","Nee",23,"Nee","Maakt niet uit","Vrouw","Man","Cruise","Nee","Ja"));
   
-var scores = [];
-  
-for(i = 0; i < kandidaten.length;i++){
-  var punten = 0;
-  if(zelf.kinderen == kandidaten[i].kinderen){
-    punten += 12;
-  }
-  punten += Math.max(5 - (Math.abs(zelf.leeftijd - kandidaten[i].leeftijd)/2),0);
-  
-  if((zelf.anderorg == "Maakt niet uit" )||(kandidaten[i].zelforg == "Ja")){
-     punten += 4;
-  }
-  if((kandidaten[i].anderorg == "Maakt niet uit" )||(zelf.zelforg == "Ja")){
-     punten += 4;
-  }
-    if((zelf.voorkeur == "Maakt niet uit"|| zelf.voorkeur == kandidaten[i].geslacht)&&( zelf.geslacht == kandidaten[i].voorkeur ||kandidaten[i].voorkeur == "Maakt niet uit")){
-     punten += 1000; 
-  }
-  
-  if((zelf.andersport == "Maakt niet uit" )||(kandidaten[i].zelfsport == "Ja")){
-     punten += 4;
-  }
-  if((kandidaten[i].andersport == "Maakt niet uit" )||(zelf.zelfsport == "Ja")){
-     punten += 4;
-  }
-  if(zelf.vakantie == kandidaten[i].vakantie){
-    punten += 7;
-  } 
-    
-  scores.push(punten); 
-}  
-var max = 0;
-var plek = 0;
 
-for(i = 0; i < scores.length ;i++){
-  if(scores[i] > max){
-   max = scores[i];
-   plek = i;
-  }
-  
-}  
-  document.getElementById("output").innerHTML = "Je matcht met: " + kandidaten[plek].naam + "!";
+ 
+  document.getElementById("output").innerHTML = 
+  'kandidaten.push(new persoon("' + zelf.naam + ' '+ document.getElementById("lastName1").value + '","'+ zelf.kinderen +'",'+ zelf.leeftijd +' ,"'+ zelf.zelforg + '","'+zelf.anderorg + '","'+ zelf.geslacht+'","'+ zelf.voorkeur + '","'+ zelf.zelfsport + '","'+ zelf.andersport + '));';
 }
